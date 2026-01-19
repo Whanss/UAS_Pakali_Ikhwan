@@ -79,7 +79,9 @@ UAS-JS-PAKALI/
 1. **Clone atau Download Proyek**:
 
    ```bash
-   cd d:/PKL/jsALI
+   cd (lokasi menyimopan project)
+   git clone https://github.com/Whanss/UTS_Pak-ALI.git
+
    ```
 
 2. **Persiapan Database**:
