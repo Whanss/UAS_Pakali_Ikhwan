@@ -79,10 +79,12 @@ UAS-JS-PAKALI/
 1. **Clone atau Download Proyek**:
 
    ```bash
-   cd (lokasi menyimopan project)
-   git clone https://github.com/Whanss/UTS_Pak-ALI.git
+   cd (Masukan lokasi menyimpan project)
 
    ```
+    ```bash
+   git clone https://github.com/Whanss/UTS_Pak-ALI.git
+     ```
 
 2. **Persiapan Database**:
    - Impor file `database.sql` ke MySQL Server Anda.
