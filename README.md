@@ -1,6 +1,7 @@
-# Aplikasi Dashboard Dinamis - UAS
+# Dashboard Analisis Performa E-Sports (PUBG MOBILE) Mahasiswa STMIK Lombok - UAS
 
-Aplikasi Dashboard Dinamis menggunakan Node.js, Express.js, MySQL, EJS, dan D3.js untuk analisis data ekonomi (Retail Sales Performance).
+Aplikasi Dashboard Dinamis berbasis Web yang dikembangkan menggunakan Node.js, Express.js, MySQL, EJS, dan D3.js.
+Aplikasi ini digunakan untuk menganalisis data performa aktivitas simulasi kompetitif digital mahasiswa STMIK Lombok, yang disajikan dalam bentuk visualisasi data interaktif.
 
 ## Identitas Mahasiswa
 - **Nama Lengkap**: Ikhwan Maulana Ivansyah
@@ -9,20 +10,24 @@ Aplikasi Dashboard Dinamis menggunakan Node.js, Express.js, MySQL, EJS, dan D3.j
 - **Semester**: 5
 
 ## Studi Kasus
-**Bidang**: Ekonomi
-**Tema**: Analisis Penjualan Retail
-**Deskripsi**: Aplikasi ini menampilkan visualisasi data performa penjualan retail berdasarkan kategori produk dan tren bulanan. Dashboard mencakup metrik pendapatan (revenue), keuntungan (profit), jumlah transaksi, kuantitas produk terjual, dan tingkat kepuasan pelanggan.
+**Bidang**: E-Sports/game
+**Tema**: Analisis Statistik Performa Pemain PUBG Mobile
+**Deskripsi**: Aplikasi ini memvisualisasikan data performa mahasiswa dalam kompetisi e-sports PUBG Mobile yang diambil dari database MySQL melalui REST API. Dashboard menyajikan analisis mendalam mengenai:
+Level Skill (Tier): Distribusi kemampuan teknis pemain.
+1.Efektivitas Eliminasi: Total poin eliminasi yang diperoleh dalam kompetisi.
+2.Kontribusi Dampak (Damage): Total kontribusi damage yang diberikan terhadap lawan.
+3.Durasi Bertahan (Survival Time): Rata-rata waktu bertahan hidup dalam menit.
+4.Korelasi Performa: Hubungan statistik antara jumlah eliminasi dengan peringkat juara (Rank Placement).
 
 ## Fitur Dashboard
-Terdapat 6 grafik dinamis menggunakan D3.js:
-1. **Bar Chart**: Total Revenue per Kategori.
-2. **Line Chart**: Tren Pendapatan Bulanan.
-3. **Pie Chart**: Distribusi Kuantitas Produk Terjual per Kategori.
-4. **Horizontal Bar Chart**: Total Profit per Kategori.
-5. **Area Chart**: Tren Jumlah Transaksi Bulanan.
-6. **Scatter Plot**: Rata-rata Kepuasan Pelanggan per Kategori.
-
-Serta tabel data lengkap yang mengambil data langsung dari MySQL melalui REST API.
+1.Terdapat 6 grafik dinamis menggunakan D3.js:
+2.Bar Chart: Total Eliminasi / Skor Poin berdasarkan Tier/tingkat.
+3.ine Chart: Tren Total Damage Harian.
+4.Pie Chart: Persentase Kategori Kompetisi.
+5.orizontal Bar Chart: Top 5 Username dengan Eliminasi / Skor Poin Tertinggi
+6.Pie Chart: Tren Rata-rata Durasi Bertahan (Menit).
+7.Scatter Plot: Korelasi antara Akurasi Presisi (%) vs Peringkat bertahan (dalam game).
+8.Serta tabel data lengkap yang mengambil data langsung dari MySQL melalui REST API.
 
 ## Struktur Proyek
 - `config/db.js`: Konfigurasi koneksi MySQL.
