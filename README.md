@@ -87,8 +87,7 @@ UAS-JS-PAKALI/
      ```
 
 2. **Persiapan Database**:
-   - Impor file `database.sql` ke MySQL Server Anda.
-   - Pastikan database `db__pubg_stmik_lombok` telah terbuat dengan tabel `players` dan `match_stats`.
+   - Pastikan database telah terbuat beserta tabelnya
 
 3. **Konfigurasi Environment**:
    Sesuaikan kredensial database di file `.env`.
