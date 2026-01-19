@@ -53,8 +53,9 @@ function updateStatistics(data) {
     (sum, d) => sum + d.kills,
     0,
   );
-  document.getElementById("totalDamage").innerText = Math.round(
-    data.reduce((sum, d) => sum + d.damage, 0) / data.length || 0,
+  document.getElementById("totalDamage").innerText = data.reduce(
+    (sum, d) => sum + d.damage,
+    0,
   );
   document.getElementById("avgHeadshot").innerText =
     (
