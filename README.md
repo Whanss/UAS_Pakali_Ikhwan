@@ -136,4 +136,4 @@ UAS-JS-PAKALI/
 - **Hosting**: Railway.com
 - **Database**: TLDB Cloud
 - **Link Deploy**: https://uaspakaliikhwan-production.up.railway.app/
-- **Link Github**: https://github.com/jsALI/UAS-JS-PAKALI.git
+- **Link Github**: https://github.com/Whanss/UAS_Pakali_Ikhwan.git
