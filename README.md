@@ -9,25 +9,28 @@ Aplikasi ini digunakan untuk menganalisis data performa aktivitas simulasi kompe
 - **Program Studi**: Sistem Informasi
 - **Semester**: 5
 
-## Studi Kasus
-**Bidang**: E-Sports/game
-**Tema**: Analisis Statistik Performa Pemain PUBG Mobile
-**Deskripsi**: Aplikasi ini memvisualisasikan data performa mahasiswa dalam kompetisi e-sports PUBG Mobile yang diambil dari database MySQL melalui REST API. Dashboard menyajikan analisis mendalam mengenai:
-Level Skill (Tier): Distribusi kemampuan teknis pemain.
-1.Efektivitas Eliminasi: Total poin eliminasi yang diperoleh dalam kompetisi.
-2.Kontribusi Dampak (Damage): Total kontribusi damage yang diberikan terhadap lawan.
-3.Durasi Bertahan (Survival Time): Rata-rata waktu bertahan hidup dalam menit.
-4.Korelasi Performa: Hubungan statistik antara jumlah eliminasi dengan peringkat juara (Rank Placement).
+## 📊 Studi Kasus
+* **Bidang**: E-Sports/Game
+* **Tema**: Analisis Statistik Performa Pemain PUBG Mobile
+* **Deskripsi**:
+  Aplikasi ini memvisualisasikan data performa mahasiswa dalam kompetisi e-sports PUBG Mobile yang diambil dari database MySQL melalui REST API. Dashboard menyajikan analisis mendalam mengenai:
+  * **Level Skill (Tier)**: Distribusi kemampuan teknis pemain.
+  * **Efektivitas Eliminasi**: Total poin eliminasi yang diperoleh dalam kompetisi.
+  * **Kontribusi Dampak (Damage)**: Total kontribusi damage yang diberikan terhadap lawan.
+  * **Durasi Bertahan (Survival Time)**: Rata-rata waktu bertahan hidup dalam menit.
+  * **Korelasi Performa**: Hubungan statistik antara jumlah eliminasi dengan peringkat juara (Rank Placement).
 
-## Fitur Dashboard
-1.Terdapat 6 grafik dinamis menggunakan D3.js:
-2.Bar Chart: Total Eliminasi / Skor Poin berdasarkan Tier/tingkat.
-3.ine Chart: Tren Total Damage Harian.
-4.Pie Chart: Persentase Kategori Kompetisi.
-5.orizontal Bar Chart: Top 5 Username dengan Eliminasi / Skor Poin Tertinggi
-6.Pie Chart: Tren Rata-rata Durasi Bertahan (Menit).
-7.Scatter Plot: Korelasi antara Akurasi Presisi (%) vs Peringkat bertahan (dalam game).
-8.Serta tabel data lengkap yang mengambil data langsung dari MySQL melalui REST API.
+## 🚀 Fitur Dashboard
+Terdapat **6 Grafik Dinamis** yang dibangun menggunakan library **D3.js**:
+
+1. **Bar Chart**: Total **Eliminasi / Skor Poin** berdasarkan **Tier/tingkat**.
+2. **Line Chart**: Tren **Total Damage** Harian.
+3. **Pie Chart**: Persentase **Kategori Kompetisi**.
+4. **Horizontal Bar Chart**: Top 5 **Username** dengan **Eliminasi / Skor Poin** Tertinggi.
+5. **Area Chart**: Tren Rata-rata **Durasi Bertahan (Menit)**.
+6. **Scatter Plot**: Korelasi antara **Akurasi Presisi (%)** vs **Peringkat bertahan (dalam game)**.
+
+Serta **Tabel Data Lengkap** yang mengambil data langsung dari MySQL melalui REST API.
 
 ## Struktur Proyek
 - `config/db.js`: Konfigurasi koneksi MySQL.
