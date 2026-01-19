@@ -132,10 +132,8 @@ UAS-JS-PAKALI/
 - **Development**: Nodemon
 - **Environment Management**: Dotenv
 
-## 📝 Catatan Penting
-
-- Pastikan MySQL Server berjalan sebelum menjalankan aplikasi.
-- Sesuaikan kredensial database di file `.env` dengan konfigurasi MySQL lokal Anda.
-- Port default adalah 3000, dapat diubah melalui variabel `PORT` di `.env`.
-- Dashboard akan menampilkan data realtime dari database MySQL.
-- Grafik dan statistik diupdate secara otomatis saat halaman dimuat.
+## 🌐 Alat deploy/hosting
+- **Hosting**: Railway.com
+- **Database**: TLDB Cloud
+- **Link Deploy**: https://uaspakaliikhwan-production.up.railway.app/
+- **Link Github**: https://github.com/jsALI/UAS-JS-PAKALI.git
