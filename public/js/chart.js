@@ -3,17 +3,23 @@ let charts = {};
 
 // Simple, professional color palette
 const colors = {
-  primary: '#3498db',
-  secondary: '#2c3e50',
-  success: '#27ae60',
-  warning: '#f39c12',
-  danger: '#e74c3c',
-  info: '#16a085',
-  gray: '#95a5a6'
+  primary: "#3498db",
+  secondary: "#2c3e50",
+  success: "#27ae60",
+  warning: "#f39c12",
+  danger: "#e74c3c",
+  info: "#16a085",
+  gray: "#95a5a6",
 };
 
 const chartColors = [
-  '#3498db', '#2c3e50', '#27ae60', '#f39c12', '#e74c3c', '#16a085', '#95a5a6'
+  "#3498db",
+  "#2c3e50",
+  "#27ae60",
+  "#f39c12",
+  "#e74c3c",
+  "#16a085",
+  "#95a5a6",
 ];
 
 document.addEventListener("DOMContentLoaded", () => fetchData());
@@ -98,16 +104,16 @@ function createKillsPerTier(data) {
         },
       },
       scales: {
-        y: { 
+        y: {
           beginAtZero: true,
           grid: {
-            color: '#e0e0e0',
-          }
+            color: "#e0e0e0",
+          },
         },
         x: {
           grid: {
             display: false,
-          }
+          },
         },
       },
     },
@@ -140,10 +146,10 @@ function createAvgDamageByTier(data) {
           label: "Rata-rata Damage",
           data: avgDamage,
           borderColor: colors.danger,
-          backgroundColor: 'rgba(231, 76, 60, 0.2)',
+          backgroundColor: "rgba(231, 76, 60, 0.2)",
           borderWidth: 2,
           pointBackgroundColor: colors.danger,
-          pointBorderColor: '#fff',
+          pointBorderColor: "#fff",
           pointBorderWidth: 1,
           pointRadius: 4,
         },
@@ -161,7 +167,7 @@ function createAvgDamageByTier(data) {
         r: {
           beginAtZero: true,
           grid: {
-            color: '#e0e0e0',
+            color: "#e0e0e0",
           },
         },
       },
@@ -188,7 +194,7 @@ function createModeDistribution(data) {
           data: Object.values(modeData),
           backgroundColor: chartColors,
           borderWidth: 2,
-          borderColor: '#fff',
+          borderColor: "#fff",
         },
       ],
     },
@@ -198,11 +204,11 @@ function createModeDistribution(data) {
       plugins: {
         legend: {
           position: "bottom",
-          labels: { 
+          labels: {
             padding: 10,
             font: {
-              size: 11
-            }
+              size: 11,
+            },
           },
         },
       },
@@ -229,7 +235,7 @@ function createTierDistribution(data) {
           data: Object.values(tierData),
           backgroundColor: chartColors,
           borderWidth: 2,
-          borderColor: '#fff',
+          borderColor: "#fff",
         },
       ],
     },
@@ -239,11 +245,11 @@ function createTierDistribution(data) {
       plugins: {
         legend: {
           position: "bottom",
-          labels: { 
+          labels: {
             padding: 10,
             font: {
-              size: 11
-            }
+              size: 11,
+            },
           },
         },
       },
@@ -269,13 +275,13 @@ function createHeadshotTrend(data) {
           label: "Akurasi (%)",
           data: sortedData.map((d) => d.headshot_rate),
           borderColor: colors.success,
-          backgroundColor: 'rgba(39, 174, 96, 0.1)',
+          backgroundColor: "rgba(39, 174, 96, 0.1)",
           borderWidth: 2,
           fill: true,
           tension: 0.3,
           pointRadius: 3,
           pointBackgroundColor: colors.success,
-          pointBorderColor: '#fff',
+          pointBorderColor: "#fff",
           pointBorderWidth: 1,
         },
       ],
@@ -289,12 +295,12 @@ function createHeadshotTrend(data) {
         },
       },
       scales: {
-        y: { 
-          min: 0, 
+        y: {
+          min: 0,
           max: 100,
           grid: {
-            color: '#e0e0e0',
-          }
+            color: "#e0e0e0",
+          },
         },
         x: {
           grid: {
@@ -303,8 +309,8 @@ function createHeadshotTrend(data) {
           ticks: {
             maxRotation: 0,
             autoSkip: true,
-            maxTicksLimit: 8
-          }
+            maxTicksLimit: 8,
+          },
         },
       },
     },
@@ -327,7 +333,7 @@ function createSurvivalVsDamage(data) {
             y: d.damage,
             r: Math.max(d.kills * 2 + 3, 5),
           })),
-          backgroundColor: 'rgba(52, 152, 219, 0.6)',
+          backgroundColor: "rgba(52, 152, 219, 0.6)",
           borderColor: colors.primary,
           borderWidth: 1,
         },
@@ -342,38 +348,38 @@ function createSurvivalVsDamage(data) {
         },
         tooltip: {
           callbacks: {
-            label: function(context) {
+            label: function (context) {
               return `Waktu Bertahan: ${context.parsed.x.toFixed(1)}m, Damage: ${context.parsed.y}`;
-            }
-          }
-        }
+            },
+          },
+        },
       },
       scales: {
         x: {
           title: {
             display: true,
             text: "Waktu Bertahan (menit)",
-            font: { 
+            font: {
               size: 11,
-              weight: '500'
+              weight: "500",
             },
           },
           grid: {
-            color: '#e0e0e0',
-          }
+            color: "#e0e0e0",
+          },
         },
         y: {
           title: {
             display: true,
             text: "Damage yang Diberikan",
-            font: { 
+            font: {
               size: 11,
-              weight: '500'
+              weight: "500",
             },
           },
           grid: {
-            color: '#e0e0e0',
-          }
+            color: "#e0e0e0",
+          },
         },
       },
     },
