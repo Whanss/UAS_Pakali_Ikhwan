@@ -36,7 +36,7 @@ Serta tabel data lengkap yang mengambil data langsung dari MySQL melalui REST AP
 ## Cara Menjalankan
 1. **Persiapan Database**:
    - Impor file `database.sql` ke MySQL Server Anda.
-   - Pastikan database `db_dashboard_uas` telah terbuat.
+   - Pastikan database `db__pubg_stmik_lombok` telah terbuat.
 
 2. **Konfigurasi Environment**:
    - Sesuaikan kredensial database di file `.env`.
@@ -44,7 +44,7 @@ Serta tabel data lengkap yang mengambil data langsung dari MySQL melalui REST AP
    DB_HOST=localhost
    DB_USER=root
    DB_PASS=
-   DB_NAME=db_dashboard_uas
+   DB_NAME=db__pubg_stmik_lombok
    PORT=3000
    ```
 
