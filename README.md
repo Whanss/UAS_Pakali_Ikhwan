@@ -49,7 +49,7 @@ Dashboard dilengkapi dengan **Statistik Ringkas** dan **6 Grafik Dinamis** yang 
 ## 📁 Struktur Proyek
 
 ```
-jsALI/
+UAS-JS-PAKALI/
 ├── config/
 │   ├── db.js              # Konfigurasi koneksi MySQL
 │   └── text-db.js         # Script untuk testing koneksi database
